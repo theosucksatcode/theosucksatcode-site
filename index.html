@@ -3,46 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Theo Snyman | Software Engineer</title>
+    <title>Theo Snyman</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="icon" href="./assets/favicons/favicon.ico" sizes="any" />
+    <link
+      rel="apple-touch-icon"
+      href="./assets/favicons/apple-touch-icon.png"
+    />
     <!-- TODO: seo seo seo -->
   </head>
   <body>
-    <header>
-      <div>
-        <h1>Hi, My name is Theo Snyman</h1>
-        <!-- TODO: profile picture here -->
-      </div>
-    </header>
+    <div class="page">
+      <header>
+        <h1 class="title">Hi, My name is Theo</h1>
+        <img
+          src="./assets/images/theo-snyman.jpeg"
+          alt="Theo Snyman's profile picture"
+          class="portrait"
+        />
+      </header>
 
-    <main>
-      <section>
-        <h2>I work at Sharp Software Solutions</h2>
-        <ul>
-          <li>Here's what I'm doing 1</li>
-          <li>Here's what I'm doing 2</li>
-        </ul>
-        <!-- TODO: needs to link to a cv page -->
-        <a href="#">View my CV</a>
-      </section>
+      <main>
+        <section>
+          <h2>I work at Sharp Software Solutions</h2>
+          <!-- TODO: replace with actual short descriptions of key work -->
+          <ul>
+            <li>Here's what I'm doing 1</li>
+            <li>Here's what I'm doing 2</li>
+          </ul>
+          <!-- TODO: needs to link to a cv page -->
+          <a href="#">View my CV</a>
+        </section>
 
-      <section>
-        <h2>Outside of work I build more things. First one's coming soon.</h2>
+        <section>
+          <h2>Outside of work I build more things. First one's coming soon.</h2>
 
-        <!-- TODO: cool fancy app icons component here that links to the landing page of each app ive built. see https://chrisraroque.com/ -->
+          <!-- TODO: cool fancy app icons component here that links to the landing page of each app ive built. see https://chrisraroque.com/ -->
 
+          <p>
+            <!-- TODO: see reference site above for how the tech stack page is laid out -->
+            Curious about what technologies I use? <a href="#">Click here.</a>
+          </p>
+        </section>
+      </main>
+
+      <div class="hr"></div>
+
+      <footer>
+        <p>Want to look at my CV? <a href="#">Click here.</a></p>
         <p>
-          <!-- TODO: see reference site above for how the tech stack page is laid out -->
-          Curious about what technologies I use? <a href="#">Click here.</a>
+          Want to start a conversation?
+          <a href="mailto:theosnyman.dev@gmail.com">Click here.</a>
         </p>
-      </section>
-    </main>
-
-    <footer>
-      <p>Want to look at my CV? <a href="#">Click here.</a></p>
-      <p>
-        Want to start a conversation?
-        <a href="mailto:theosnyman.dev@gmail.com">Click here.</a>
-      </p>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
