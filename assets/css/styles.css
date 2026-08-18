@@ -181,5 +181,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+.cv-entry-header-top {
+  margin-bottom: 0.25rem;
+}
+.cv-entry-value {
+  margin: 0.25rem 0;
 }
