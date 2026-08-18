@@ -122,6 +122,10 @@ a:focus-visible {
   gap: 1rem;
   padding: 2rem;
 }
+.page.page-xw {
+  max-width: 75rem;
+  margin: 0 auto;
+}
 
 header {
   display: flex;
@@ -151,4 +155,31 @@ header {
 
 .hr {
   border: 1px dotted rgb(209, 213, 219);
+}
+
+.links-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.cv-link {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.cv-section-title {
+  border-bottom: 1px solid var(--text);
+}
+
+.cv-entry-header-top,
+.cv-entry-header-bot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
