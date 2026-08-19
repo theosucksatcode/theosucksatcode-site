@@ -132,6 +132,9 @@ header {
   flex-direction: column;
   gap: 0.75rem;
 }
+header.no-flex {
+  display: unset;
+}
 
 .title {
   margin: 0;
@@ -189,4 +192,29 @@ header {
 }
 .cv-entry-value {
   margin: 0.25rem 0;
+}
+
+.header-desc {
+  margin-bottom: 0;
+  margin-top: 0.75rem;
+}
+
+.tech-item-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.tech-item-logo {
+  width: 2rem;
+}
+
+ul {
+  padding-left: 1.25em;
+}
+
+li {
+  list-style: none;
+  padding-left: 1.25em;
+  background: url("../icons/arrow-badge-right.svg") no-repeat left 0.35em /
+    0.75em;
 }
