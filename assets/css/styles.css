@@ -68,11 +68,16 @@ h6 {
   Custom
 */
 
-/* TODO: properly theme */
 :root {
-  --text: rgb(31, 41, 55);
-  --link: rgb(147 51 234);
-  --default-chrome-link-clr: rgb(0, 0, 238);
+  --text-heading: #0b0b0b;
+  --text-body: #404040;
+  --text-bullet: #535353;
+  --divider: #e6e6e6;
+  --link: #1773b2;
+  --link-visited: #145c90;
+  --link-hover: #2591d2;
+  --link-active: #0f2a42;
+  --accent: #2591d2;
 }
 
 body {
@@ -88,8 +93,17 @@ body {
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
-  color: var(--text);
+  color: var(--text-body);
   margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-heading);
 }
 
 li,
@@ -100,18 +114,19 @@ a {
 
 a {
   text-decoration: none;
+  color: var(--link);
 }
 a:visited {
-  color: var(--link);
+  color: var(--link-visited);
 }
 a:hover {
-  color: var(--link);
+  color: var(--link-hover);
 }
 a:active {
-  color: var(--default-chrome-link-clr);
+  color: var(--link-active);
 }
 a:focus-visible {
-  outline-color: var(--default-chrome-link-clr);
+  outline-color: var(--link);
 }
 
 .page {
@@ -157,7 +172,7 @@ header.no-flex {
 }
 
 .hr {
-  border: 1px dotted rgb(209, 213, 219);
+  border: 1px dotted var(--divider);
 }
 
 .links-container {
@@ -176,7 +191,7 @@ header.no-flex {
 }
 
 .cv-section-title {
-  border-bottom: 1px solid var(--text);
+  border-bottom: 1px solid var(--text-heading);
 }
 
 .cv-entry-header-top,
@@ -215,6 +230,7 @@ ul {
 li {
   list-style: none;
   padding-left: 1.25em;
+  color: var(--text-bullet);
   background: url("../images/icons/arrow-badge-right.svg") no-repeat left
     0.35em / 0.75em;
 }
