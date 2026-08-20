@@ -138,7 +138,7 @@ a:focus-visible {
   padding: 2rem;
 }
 .page.page-xw {
-  max-width: 75rem; /* TODO: should ideally be set to whatever an a4 page width is */
+  max-width: 75rem;
   margin: 0 auto;
 }
 
