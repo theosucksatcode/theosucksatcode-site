@@ -1,19 +1,10 @@
-/*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
+/* reset rules */
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
-/* not needed 
-
-*:not(dialog) {
-  margin: 0;
-} */
 
 @media (prefers-reduced-motion: no-preference) {
   html {
@@ -64,9 +55,7 @@ h6 {
   text-wrap: balance;
 }
 
-/* 
-  Custom
-*/
+/* custom rules */
 
 :root {
   --text-heading: #0b0b0b;
@@ -129,6 +118,26 @@ a:focus-visible {
   outline-color: var(--link);
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+header.no-flex {
+  display: unset;
+}
+
+ul {
+  padding-left: 1.25em;
+}
+li {
+  list-style: none;
+  padding-left: 1.25em;
+  color: var(--text-bullet);
+  background: url("../images/icons/arrow-badge-right.svg") no-repeat left
+    0.35em / 0.75em;
+}
+
 .page {
   max-width: 37.5rem;
   display: flex;
@@ -140,15 +149,6 @@ a:focus-visible {
 .page.page-xw {
   max-width: 75rem;
   margin: 0 auto;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-header.no-flex {
-  display: unset;
 }
 
 .title {
@@ -221,16 +221,4 @@ header.no-flex {
 }
 .tech-item-logo {
   width: 2rem;
-}
-
-ul {
-  padding-left: 1.25em;
-}
-
-li {
-  list-style: none;
-  padding-left: 1.25em;
-  color: var(--text-bullet);
-  background: url("../images/icons/arrow-badge-right.svg") no-repeat left
-    0.35em / 0.75em;
 }
