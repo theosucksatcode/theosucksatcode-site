@@ -138,6 +138,10 @@ li {
     0.35em / 0.75em;
 }
 
+dt {
+  font-weight: 700;
+}
+
 .page {
   max-width: 37.5rem;
   display: flex;

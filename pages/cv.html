@@ -16,6 +16,7 @@
       name="description"
       content="Theo Snyman is a fullstack developer based in Pretoria, South Africa. View his full CV, work experience, and technical skills."
     />
+    <link rel="canonical" href="https://theosucksatcode.co.za/pages/cv.html" />
     <!-- og / facebook -->
     <meta property="og:type" content="website" />
     <meta
@@ -27,7 +28,10 @@
       property="og:description"
       content="Theo Snyman is a fullstack developer based in Pretoria, South Africa. View his full CV, work experience, and technical skills."
     />
-    <meta property="og:image" content="../assets/images/og/og-cv.png" />
+    <meta
+      property="og:image"
+      content="https://theosucksatcode.co.za/assets/images/og/og-cv.png"
+    />
     <!-- x (twitter) -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta
@@ -39,7 +43,10 @@
       property="twitter:description"
       content="Theo Snyman is a fullstack developer based in Pretoria, South Africa. View his full CV, work experience, and technical skills."
     />
-    <meta property="twitter:image" content="../assets/images/og/og-cv.png" />
+    <meta
+      property="twitter:image"
+      content="https://theosucksatcode.co.za/assets/images/og/og-cv.png"
+    />
   </head>
   <body>
     <div class="page page-xw">
@@ -66,13 +73,19 @@
           </div>
           <div class="cv-link">
             <img src="../assets/images/icons/brand-linkedin.svg" alt="" />
-            <a href="https://www.linkedin.com/in/snymantheo/" target="_blank"
+            <a
+              href="https://www.linkedin.com/in/snymantheo/"
+              target="_blank"
+              rel="noopener noreferrer"
               >linkedin.com/in/snymantheo/</a
             >
           </div>
           <div class="cv-link">
             <img src="../assets/images/icons/brand-github.svg" alt="" />
-            <a href="https://github.com/theosucksatcode" target="_blank"
+            <a
+              href="https://github.com/theosucksatcode"
+              target="_blank"
+              rel="noopener noreferrer"
               >github.com/theosucksatcode</a
             >
           </div>
@@ -89,6 +102,7 @@
               <a
                 href="https://www.belgiumcampus.ac.za/bachelor-of-information-technology/"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="cv-entry-value"
               >
                 Bachelor of Information Technology in Software Development
@@ -105,7 +119,10 @@
           <div>
             <div class="cv-entry-header-top">
               <h3 class="cv-entry-value">
-                <a href="https://sharpsoftwaresolutions.net/" target="_blank"
+                <a
+                  href="https://sharpsoftwaresolutions.net/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   >Sharp Software Solutions</a
                 >
               </h3>
@@ -141,24 +158,24 @@
         </section>
 
         <section>
-          <h2>Technical Skills</h2>
-          <p class="cv-entry-value">
-            <b>Languages:</b> TypeScript, JavaScript, C#, HTML5, CSS
-          </p>
-          <p class="cv-entry-value">
-            <b>Frameworks/Libraries:</b> Nuxt, Vue.js, Vuetify, React,
-            AvaloniaUI, Tailwind CSS, Node.js
-          </p>
-          <p class="cv-entry-value">
-            <b>Databases:</b> MongoDB, Mongoose, Supabase
-          </p>
-          <p class="cv-entry-value">
-            <b>Platforms/Hosting:</b> Vercel, Hostinger, GitHub Pages, Resend
-          </p>
-          <p class="cv-entry-value">
-            <b>Developer Tools:</b> Git, GitHub, VS Code, Claude, Google Chrome,
-            Mobbin, FluidVoice
-          </p>
+          <h2 class="cv-section-title">Technical Skills</h2>
+
+          <dl>
+            <dt>Languages</dt>
+            <dd>TypeScript, JavaScript, C#, HTML5, CSS</dd>
+            <dt>Frameworks/Libraries</dt>
+            <dd>
+              Nuxt, Vue.js, Vuetify, React, AvaloniaUI, Tailwind CSS, Node.js
+            </dd>
+            <dt>Databases</dt>
+            <dd>MongoDB, Mongoose, Supabase</dd>
+            <dt>Platforms/Hosting</dt>
+            <dd>Vercel, Hostinger, GitHub Pages, Resend</dd>
+            <dt>Developer Tools</dt>
+            <dd>
+              Git, GitHub, VS Code, Claude, Google Chrome, Mobbin, FluidVoice
+            </dd>
+          </dl>
         </section>
       </main>
 
@@ -169,17 +186,32 @@
           Want to download my CV?
           <a
             href="../assets/documents/theo-snyman-fullstack-developer-cv.pdf"
-            download="theo-snyman-fullstack-developer-cv"
+            download="theo-snyman-fullstack-developer-cv.pdf"
+            aria-label="Click here to download my CV"
             >Click here.</a
           >
         </p>
         <p>
           Want to start a conversation?
-          <a href="mailto:theosnyman.dev@gmail.com">Click here.</a>
+          <a
+            href="mailto:theosnyman.dev@gmail.com"
+            aria-label="Click here to start a conversation with me"
+            >Click here.</a
+          >
+        </p>
+        <p>
+          Curious about what technologies I prefer?
+          <a
+            href="./technologies.html"
+            aria-label="Click here to view my preferred tech stack"
+            >Click here.</a
+          >
         </p>
         <p>
           Want to go back to home?
-          <a href="../index.html">Click here.</a>
+          <a href="../index.html" aria-label="Click here to go back home"
+            >Click here.</a
+          >
         </p>
       </footer>
     </div>
