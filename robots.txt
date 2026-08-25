@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://theosucksatcode.co.za/sitemap.xml
