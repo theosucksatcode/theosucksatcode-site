@@ -69,6 +69,14 @@ h6 {
   --accent: #2591d2;
 }
 
+html,
+body,
+a {
+  cursor:
+    url("../images/cursor.svg") 11 8,
+    auto;
+}
+
 body {
   font-family:
     system-ui,
@@ -110,6 +118,9 @@ a:visited {
 }
 a:hover {
   color: var(--link-hover);
+  text-decoration: underline;
+  text-decoration-color: var(--link-hover);
+  text-underline-offset: 3px;
 }
 a:active {
   color: var(--link-active);
